@@ -1,0 +1,109 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Fondo */
+body {
+    background-color: #ffe8a1;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.box_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    color: #e76f51;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+button {
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e76f51;
+}
+
+/* Imagen */
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Caja de texto */
+
+.text-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 28vh;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.box_svg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.text-box img {
+    width: 100%;
+    height: auto;
+}
+
+.text-box p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    text-align: center;
+}
