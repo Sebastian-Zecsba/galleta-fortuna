@@ -4,12 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Fondo */
 body {
     background-color: #ffe8a1;
     font-family: 'Arial', sans-serif;
+    font-weight: 900;
 }
 
 /* Contenedor principal */
@@ -22,31 +24,43 @@ body {
 
 .box_text {
     width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: absolute;
+}
+
+.box_text_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 /* Título */
 h1 {
-    font-size: 2.5em;
-    color: #e76f51;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-shadow:    -3px -3px orange,
+                    3px 3px orange,
+                    -3px 3px orange,
+                    3px -3px orange;
 }
 
 /* Botón */
 button {
-    background-color: #f4a261;
-    color: white;
-    border: none;
+    background-color: orange;
+    color: brown;
+    border: 2px brown solid;
     padding: 10px 20px;
-    font-size: 1em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -96,7 +110,7 @@ button:hover {
     height: auto;
 }
 
-.text-box p {
+.text_fortune {
     position: relative;
     z-index: 1;
     margin: 0;
@@ -106,4 +120,17 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 90%;
     text-align: center;
+    color: gray;
+}
+
+
+@media (max-width: 400px){
+    h1 {
+        font-size: 1.9rem;
+        color: #FFFFFF;
+        text-shadow:    -2px -2px orange,
+                        2px 2px orange,
+                        -2px 2px orange,
+                        2px -2px orange;
+    }
 }
