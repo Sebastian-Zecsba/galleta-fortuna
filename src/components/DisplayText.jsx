@@ -6,10 +6,10 @@ const DisplayText = ({randomPhrase}) => {
             </div>
             {randomPhrase ?
                 (<div>
-                    <p className="text_fortune">{randomPhrase.phrase}</p>
+                    <p className="text_fortune_random">{randomPhrase.phrase}</p>
                 </div> )
                 :
-                <p className="text_fortune">Presiona para ver tu suerte</p>
+                <p className="text_fortune_random">Presiona para ver tu suerte</p>
             }
 
             

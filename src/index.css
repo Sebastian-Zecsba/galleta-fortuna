@@ -24,7 +24,7 @@ body {
 
 .box_text {
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,17 +110,30 @@ button:hover {
     height: auto;
 }
 
-.text_fortune {
+.text_fortune_random {
     position: relative;
     z-index: 1;
     margin: 0;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 90%;
     text-align: center;
     color: gray;
+}
+
+.text_fortune_author {
+    position: relative;
+    width: 250px;
+    z-index: 1;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    text-align: center;
+    color: gray;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 

@@ -42,10 +42,10 @@ function App() {
 
         {randomPhrase ?  (
                 <div className="box_autor">
-                    <p className="text_fortune">{randomPhrase.author}</p>
+                    <p className="text_fortune_author">Fuente: {randomPhrase.author}</p>
                 </div> )
                 :
-                <p className="text_fortune">Presiona para ver tu suerte</p>}
+                <p className="text_fortune_author">Presiona para ver el autor</p>}
       </div>
     </div>
   );
